@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills&Hobbies</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Yi (Maggie) YAN</h1>
+            </div>
+            <img src="profile/1.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+            <div class="profile-card">
+                <p class="summary">
+                    Yi Yan is a dedicated researcher with a strong background in psychology and chemistry. She has gained extensive experience through various research internships and projects, focusing on neuroimaging, visual science, and the effects of sleep on performance. Yi is skilled in data analysis, programming, and has contributed to significant publications in the field of ophthalmology.
+                </p>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="mailto:yi.yan@nyu.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="tel:+16506609898" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2023</div>
+                        <div class="timeline-content">
+                            <h3>B.A. in Psychology, Minor in Chemistry</h3>
+                            <span>New York University<br></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">July 2022 – Present</div>
+                        <div class="timeline-content">
+                            <h3>Research Intern</h3>
+                            <span>Nudler Lab at NYU Langone<br></span>
+                            <p>Involved in research on riboswitches with Dr. Giulio Quarta. Conducted labs for PCR, transcription, and inoculation for cell cloning. Formulated lab protocols and achieved milestone progress in cell lysis time.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2022 – Present</div>
+                        <div class="timeline-content">
+                            <h3>Data Analyst</h3>
+                            <span>Dysautonomia Center at NYU Langone<br></span>
+                            <p>Assisted in restocking medical supplies and organizing data sheets. Input lab data from FD patients and worked on the Natural History of Familial Dysautonomia project.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Sept 2022 – Present</div>
+                        <div class="timeline-content">
+                            <h3>Emergency Room Volunteer</h3>
+                            <span>Lenox Health Greenwich Village<br></span>
+                            <p>Restocked supplies and assisted in patient discharge processes. Gained understanding of emergency room operations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2020 – Jun 2021</div>
+                        <div class="timeline-content">
+                            <h3>Research Intern</h3>
+                            <span>Neuroimaging and Visual Science Lab at NYU Langone<br></span>
+                            <p>Analyzed imaging data and assisted in research on neurobehavioral effects of scutellarin treatment.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2019 - July 2019</div>
+                        <div class="timeline-content">
+                            <h3>Shadowing</h3>
+                            <span>The Second Hospital of Hebei Medical University<br></span>
+                            <p>Observed non-invasive procedures and interactions in operating rooms. Gained familiarity with medical machines and surgical team tasks.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct 2017 - May 2019</div>
+                        <div class="timeline-content">
+                            <h3>Recreation Room Intern</h3>
+                            <span>Ronald McDonald House at Stanford<br></span>
+                            <p>Built relationships with children and parents, and supported families during illness.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h2>Skills & Hobbies</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Python</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>SPSS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>Excel</span>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Effect of Sleeping Quality on Daily Performance</h3>
+                    <span class="project-date">May 2022 - Oct 2022</span>
+                    <ul class="project-list">
+                        <li><i class="fa-solid fa-truck"></i> Investigated the effect of sleep deprivation on learning efficiency through scholarly articles and data collection.</li>
+                    </ul>
+                    <br>
+                    <div class="techniques">
+                        <span class="technique-tag">Survey Design</span>
+                        <span class="technique-tag">Correlational Analysis</span>
+                        <span class="technique-tag">Regression Model</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Beauty and Social Influence</h3>
+                    <span class="project-date">Sep 2022 - Dec 2022</span>
+                    <ul class="project-list">
+                        <li><i class="fa-solid fa-bullhorn"></i> Examined public influence on beauty judgments through surveys and data analysis.</li>
+                    </ul>
+                    <br>
+                    <div class="techniques">
+                        <span class="technique-tag">Qualtrics Survey</span>
+                        <span class="technique-tag">T-test</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+</html>
